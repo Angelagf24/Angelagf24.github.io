@@ -4,7 +4,7 @@
   height="120"      
   viewBox="0 0 60 60"
 >
-  <circle cx="30" cy="30" r="25" fill="#f4a261" />
+  <circle cx="30" cy="30" r="35" fill="#f4a261" />
   <text
     x="30"
     y="30"

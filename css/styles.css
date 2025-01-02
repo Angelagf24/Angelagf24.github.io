@@ -11387,7 +11387,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NAVBAR */
 .navbar-logo img {
-  width: 200px !important;
+  width: 250px !important;
   height: auto !important;
   max-height: none !important;
 }
@@ -11565,9 +11565,7 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-block {
   display: flex;               /* Alinea en fila */
   align-items: center;         /* Icono y texto al mismo nivel */
-  /* Menos intenso: background: linear-gradient(135deg, #ecc7f1, #d89bf1); */
-  /* más intenso: background: linear-gradient(135deg, #f49ff6, #c46ce1); */
-  background: linear-gradient(135deg, #dcecff, #f3daff);
+  background: linear-gradient(135deg, #98aeff, #cb91ff);
   color: #fff;                 /* Texto en blanco para resaltar */
   padding: 1rem;
   margin-bottom: 1.5rem;
@@ -11639,42 +11637,79 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .timeline-block {
+      flex-direction: column;
+      margin-left: 50px;  /* Para evitar que se salga en pantallas pequeñas */
+  }
+  .timeline-icon {
+      position: relative;
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+  .timeline-content {
+      margin-left: 0;
+  }
+}
+
 
 /* SECCIÓN HABILIDADES */
-#skills {
-  padding: 60px 0; 
+.soft-skills-section,
+.hard-skills-section {
+  margin-top: 40px; 
 }
 
-/* Tarjeta contenedora de cada categoría de skills */
-.skills-box {
-  background-color: #f9fafc;  /* Un gris suave */
-  border: 1px solid #eaeaea;
+/* Tarjeta */
+.skill-card {
+  background-color: #2c3e50;  /* FONDO OSCURO, EJEMPLO TEAL/GRIS */
+  color: #fff;                /* Texto en blanco */
+  padding: 20px;
   border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%; /* Para que todas tengan la misma altura en su col */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Título interno (“Habilidades Personales”, “Habilidades Técnicas”) */
-.skills-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #2a2a2a;
+/* Efecto hover */
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Íconos de las listas de skills */
-.icon-skill {
-  color: #e76f51;         
+/* Título en la tarjeta */
+.skill-title {
   font-size: 1.2rem;
-  vertical-align: middle;
+  margin: 10px 0 0 0;
+  text-transform: capitalize;
 }
 
-/* Ajustes de ul (quitar bullet, etc.) */
-.soft-skills ul,
-.technical-skills ul {
-  list-style: none;
-  padding-left: 0;
+.skill-icon img {
+  width: 40px;  
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.soft-skills li,
-.technical-skills li {
+/* Texto del listado Hard Skills (para la parte <p class="skill-list">) */
+.skill-list {
+  text-align: center;
   font-size: 1rem;
-  color: #555;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Ajustes responsive para que se adapten bien */
+@media (max-width: 576px) {
+  .skill-card {
+    padding: 15px;
+  }
+  .skill-title {
+    font-size: 1rem;
+  }
+  .skill-icon img {
+    width: 30px;
+  }
 }
