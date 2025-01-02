@@ -11655,63 +11655,49 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* SECCIÓN HABILIDADES */
-.hard-skills-section {
-   /* Ejemplo: un fondo muy claro gris-azulado para el contenedor general */
-   background-color: #f8fafc; 
-   padding: 40px 0;
-   /* Podrías usar un degradado suave si gustas:
-      background: linear-gradient(135deg, #f0f4f8, #e9eff5);
-    */
+/* Sección Habilidades Generales */
+#skills {
+  padding: 40px 0;
 }
 
-/* Tarjeta */
+/* Estilo Común para Soft y Hard Skills */
 .skill-card {
-  background-color: #fff;          /* Tarjeta color blanco */
-  color: #333;                     /* Texto oscuro */
-  border-radius: 8px;             /* Bordes redondeados */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: transform 0.2s, box-shadow 0.2s;
+  background: #ffd6e0; /* Fondo rosa pastel */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s;
 }
-/* Efecto hover para la tarjeta */
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
 .skill-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
 }
 
-/* Título dentro de la tarjeta */
 .skill-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  color: #444; 
-  margin-bottom: 1rem;
-  text-transform: capitalize;
+  margin-top: 10px;
 }
 
-/* Texto dentro de la tarjeta */
-.skill-list {
-  font-size: 1rem; 
-  color: #555;
-  line-height: 1.4;
-  margin: 0;
+/* Espacios entre secciones */
+#skills {
+  margin-top: 40px;
 }
 
-/* Imágenes de las tecnologías */
-.skill-list img {
-  width: 40px;   /* Ajusta el tamaño de cada logo */
-  height: auto;
-  margin: 0 5px; /* separación horizontal */
-  vertical-align: middle;
+.soft-skills-section, .hard-skills-section {
+  margin-bottom: 30px;
 }
 
-/* Ajustes responsive para que se adapten bien */
-@media (max-width: 576px) {
+/* Ajuste responsive */
+@media (max-width: 768px) {
   .skill-card {
-    padding: 15px;
-  }
-  .skill-title {
-    font-size: 1rem;
-  }
-  .skill-icon img {
-    width: 30px;
+    margin-bottom: 15px;
   }
 }
