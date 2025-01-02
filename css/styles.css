@@ -11341,71 +11341,40 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
-  background: linear-gradient(to bottom, #a0c4ff, #bdb2ff); /* Ajuste de colores */
-  padding: 0; /* Sin espacio extra */
+  min-height: 100vh; /* Ocupa toda la pantalla */
+  background: linear-gradient(to bottom, #a0c4ff, #bdb2ff); /* Fondo degradado */
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+/* Contenedor centrado */
+.masthead .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh; /* Centrado vertical casi completo */
 }
 
 /* Título principal */
 .masthead-heading {
-  font-size: 3rem; /* Tamaño adecuado para el título */
+  font-size: 3rem; /* Tamaño adecuado */
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #ffffff; /* Blanco puro para mayor contraste */
+  color: #fff; /* Texto blanco puro */
 }
 
 /* Subtítulo */
 .masthead-subheading {
   font-size: 1.2rem;
   font-weight: 400;
-  color: #ffffff; /* Blanco puro para mayor contraste */
+  color: #f0f0f0; /* Gris claro */
   margin-bottom: 1.5rem;
 }
 
-/* Descripción (si hubiera) */
-.masthead p {
-  font-size: 1.1rem;
-  color: #f0f0f0;
-  margin-bottom: 2rem;
-}
-
-.masthead .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-}
-
-/* ICONOS SOCIALES */
-.social-icons {
-  margin: 1.5rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social-icons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px; 
-  height: 50px;
-  background-color: #f4a261;
-  color: #fff;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.social-icons a:hover {
-  background-color: #e76f51;
-  transform: scale(1.1);
-}
-
-/* BOTÓN DESCARGAR CV */
+/* Botón Descargar CV */
 .btn-primary {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -11423,6 +11392,78 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.05);
 }
 
+/* Iconos Sociales */
+.social-icons {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f4a261;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #e76f51;
+  transform: scale(1.1);
+}
+
+/* ===== LOGO BARRA NAVEGACIÓN ===== */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.navbar-brand svg {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Navbar Ajustado */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.9); /* Transparencia ligera */
+  z-index: 1000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .masthead-heading {
+    font-size: 2.5rem;
+  }
+
+  .masthead-subheading {
+    font-size: 1rem;
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
 
 /* ===== SECCIÓN CONÓCEME ===== */
 #about {
@@ -11513,54 +11554,3 @@ h1, h2, h3, h4, h5, h6 {
   color: #555;
 }
 
-/* ===== LOGO BARRA NAVEGACIÓN ===== */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* Espacio entre el icono y el texto */
-}
-
-.navbar-logo {
-  height: 40px; /* Tamaño adecuado */
-  width: auto; /* Mantener proporciones */
-  margin-right: 0.5rem;
-}
-
-.navbar-brand svg {
-  height: 40px;
-  width: auto;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* Asegurarse de que no se superponga */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.9); /* Fondo con transparencia */
-  z-index: 1000;
-}
-
-
-/* ===== AJUSTE RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .masthead-heading {
-    font-size: 2.5rem;
-  }
-
-  .masthead-subheading {
-    font-size: 1rem;
-  }
-
-  .masthead p {
-    font-size: 0.9rem;
-  }
-
-  .social-icons a {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
-}
