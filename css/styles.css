@@ -11336,7 +11336,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section (Sección principal) */
 .masthead {
   text-align: center;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   background: linear-gradient(to bottom, #f9fafc, #e3e7ed);
 }
 
@@ -11357,9 +11357,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Descripción debajo del título */
 .masthead p {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #6c757d; /* Gris elegante */
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Botones Principales */
@@ -11375,6 +11375,15 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
   background-color: #e76f51;
   border-color: #e76f51;
+}
+
+/* NAVBAR */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;  
+  height: 50px;
 }
 
 /* ICONOS SOCIALES */
@@ -11406,7 +11415,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* BOTÓN DESCARGA CV */
-/* Botón principal */
 .btn-primary {
   background-color: #e76f51;
   border-color: #e76f51;
@@ -11423,7 +11431,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Sección Conóceme */
+/* SECCIÓN CÓNOCEME */
 #about {
   background: #f9fafc;
   padding: 60px 0;
@@ -11447,7 +11455,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #555;
 }
 
-/* SECCIÓN CÓNOCEME */
 .interests-section {
   margin-top: 50px;
 }
