@@ -11558,7 +11558,8 @@ h1, h2, h3, h4, h5, h6 {
 /* SECCIÓN FORMACIÓN */
 #formacion {
   background-color: #fff;      
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 /* Bloque contenedor de icono + texto */
@@ -11700,4 +11701,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 .skill-item img {
   margin-right: 5px;     /* Separación del ícono respecto al texto */
+}
+
+
+/* SECCIÓN PORTFOLIO */
+#portfolio {
+  padding: 60px 0;
+}
+
+#portfolio .card {
+  border: none;
+  border-radius: 8px;
+}
+
+#portfolio .card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  max-height: 200px;
+}
+  
+#portfolio .card-body {
+  background-color: #f8f9fa; 
+}
+
+#portfolio .card-footer {
+  background-color: #fff;
+}
+
+#portfolio .card h5.card-title {
+  font-weight: 600;
+}
+
+#portfolio .card-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Sombrita suave en hover */
+#portfolio .card:hover {
+  box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
 }
