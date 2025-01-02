@@ -11567,7 +11567,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;         /* Icono y texto al mismo nivel */
   /* Menos intenso: background: linear-gradient(135deg, #ecc7f1, #d89bf1); */
   /* más intenso: background: linear-gradient(135deg, #f49ff6, #c46ce1); */
-  background: linear-gradient(135deg, #f49ff6, #c46ce1);
+  background: linear-gradient(135deg, #dcecff, #f3daff);
   color: #fff;                 /* Texto en blanco para resaltar */
   padding: 1rem;
   margin-bottom: 1.5rem;
@@ -11637,4 +11637,44 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-content ul li {
   margin-bottom: 0.3rem;
   color: #fff;
+}
+
+
+/* SECCIÓN HABILIDADES */
+#skills {
+  padding: 60px 0; 
+}
+
+/* Tarjeta contenedora de cada categoría de skills */
+.skills-box {
+  background-color: #f9fafc;  /* Un gris suave */
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+
+/* Título interno (“Habilidades Personales”, “Habilidades Técnicas”) */
+.skills-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2a2a2a;
+}
+
+/* Íconos de las listas de skills */
+.icon-skill {
+  color: #e76f51;         
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* Ajustes de ul (quitar bullet, etc.) */
+.soft-skills ul,
+.technical-skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.soft-skills li,
+.technical-skills li {
+  font-size: 1rem;
+  color: #555;
 }
