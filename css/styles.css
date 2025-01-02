@@ -11359,15 +11359,15 @@ h1, h2, h3, h4, h5, h6 {
 .masthead-heading {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.3rem !important;
 }
 
 /* Descripción debajo del título */
 .masthead p {
   font-size: 1.5rem;
   color: #6c757d; /* Gris elegante */
-  margin-top: 0;         
-  margin-bottom: 0.5rem; 
+  margin-top: 0 !important;         
+  margin-bottom: 0.5rem !important; 
 }
 
 /* Botones Principales */
@@ -11387,18 +11387,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NAVBAR */
 .navbar-logo img {
-  width: 120px !important;
+  width: 200px !important;
   height: auto !important;
   max-height: none !important;
 }
 
 #mainNav {
-  background-color: #343a40 !important;
+  background-color: #000 !important;
   transition: none !important;     
 }
 
 #mainNav.navbar-shrink {
-  background-color: #343a40 !important;
+  background-color: #000 !important;
 }
 
 

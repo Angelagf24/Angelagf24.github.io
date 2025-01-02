@@ -1,0 +1,205 @@
+/* ========== PERSONALIZACIÓN DEL PORTFOLIO ========== */
+
+/* Tipografía Principal */
+body {
+  font-family: 'Lato', sans-serif; /* Fuente para el cuerpo */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333; /* Texto principal */
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif; /* Fuente para títulos */
+  font-weight: 700;
+  color: #444; /* Texto de encabezados */
+}
+
+/* Hero Section (Sección principal) */
+.masthead {
+  /* Lo que ya tienes */
+  text-align: center;
+  background: linear-gradient(to bottom, #f9fafc, #e3e7ed);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrado vertical */
+  align-items: center;     /* Centrado horizontal */
+  min-height: 100vh;       /* Ocupar al menos toda la ventana */
+  margin: 0;               /* Quitar margenes que puedan empujar */
+  padding: 0 1rem;         /* Asegurar un margen horizontal */
+}
+
+.masthead-subheading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Título principal */
+.masthead-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem !important;
+}
+
+/* Descripción debajo del título */
+.masthead p {
+  font-size: 1.5rem;
+  color: #6c757d; /* Gris elegante */
+  margin-top: 0 !important;         
+  margin-bottom: 0.5rem !important; 
+}
+
+/* Botones Principales */
+.btn-primary {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #f4a261; /* Color cálido */
+  border-color: #e76f51;
+  border-radius: 25px; /* Bordes redondeados */
+}
+
+.btn-primary:hover {
+  background-color: #e76f51;
+  border-color: #e76f51;
+}
+
+/* NAVBAR */
+.navbar-logo img {
+  width: 200px !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+#mainNav {
+  background-color: #000 !important;
+  transition: none !important;     
+}
+
+#mainNav.navbar-shrink {
+  background-color: #000 !important;
+}
+
+
+/* ICONOS SOCIALES */
+/* Contenedor de iconos */
+.social-icons {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Iconos individuales */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f4a261; /* Color de fondo */
+  color: #fff; /* Color del ícono */
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #e76f51; /* Color al pasar el ratón */
+  transform: scale(1.1);
+}
+
+/* BOTÓN DESCARGA CV */
+.btn-primary {
+  background-color: #e76f51;
+  border-color: #e76f51;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #f4a261;
+  border-color: #f4a261;
+  transform: scale(1.05);
+}
+
+
+/* SECCIÓN CÓNOCEME */
+#about {
+  background: #f9fafc;
+  padding: 60px 0;
+}
+
+.about-me img {
+  width: 250px;
+  border: 5px solid #e76f51;
+  margin-bottom: 20px;
+}
+
+.about-me h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+.about-me p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.interests-section {
+  margin-top: 50px;
+}
+
+.interests-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+.interest-box {
+  background: #2a2a2a;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interest-box i {
+  margin-bottom: 10px;
+}
+
+/* Sección de Tecnologías */
+.technologies-section {
+  margin-top: 50px;
+}
+
+.technologies-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+.technologies-section i {
+  margin-bottom: 10px;
+  color: #e76f51;
+}
+
+.technologies-section p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
