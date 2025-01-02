@@ -11335,8 +11335,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section (Sección principal) */
 .masthead {
-  text-align: center;
-  padding: 1.5rem 0;
+  display: flex;               /* Activar flexbox */
+  flex-direction: column;      /* Colocar elementos en columna */
+  align-items: center;         /* Centrado horizontal */
+  justify-content: center;     /* Centrado vertical */
+  height: 100vh;               /* Que ocupe el alto total de la ventana */
+  margin: 0;                   /* Quitar márgenes extra */
+  padding: 0;                  /* Quitar padding extra */
   background: linear-gradient(to bottom, #f9fafc, #e3e7ed);
 }
 
