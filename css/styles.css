@@ -11657,6 +11657,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 10px;
 }
 
 /* Efecto hover */
@@ -11769,6 +11770,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px 16px;
   font-weight: 600;
   display: center;
+}
+
+/* SECCIÓN CONTACTO */
+#contact .contact-item a {
+  color: #5c3480 !important; 
+}
+
+#contact .contact-item a:hover {
+  color: #462760 !important; /* un tono más oscuro al pasar el mouse */
 }
 
 /* AJUSTES GENERALES POR PROBLEMAS DE VISUALIZACIÓN */
