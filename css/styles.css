@@ -11342,53 +11342,44 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   text-align: center;
   min-height: 100vh; /* Ocupa toda la altura de la pantalla */
-  background: linear-gradient(to bottom, #f9fafc, #e3e7ed); /* Fondo sutil */
-  padding: 3rem 1rem;
+  background: linear-gradient(to bottom, #a0c4ff, #bdb2ff); /* Ajuste de colores */
+  padding: 0; /* Sin espacio extra */
+  margin: 0;
   box-sizing: border-box;
 }
 
 /* Título principal */
 .masthead-heading {
-  font-size: 2.5rem; /* Tamaño ajustado */
+  font-size: 3rem; /* Tamaño adecuado para el título */
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #fff; /* Blanco para más contraste */
+  color: #ffffff; /* Blanco puro para mayor contraste */
 }
 
 /* Subtítulo */
 .masthead-subheading {
   font-size: 1.2rem;
   font-weight: 400;
-  color: #f0f0f0; /* Blanco con un toque gris */
+  color: #ffffff; /* Blanco puro para mayor contraste */
   margin-bottom: 1.5rem;
 }
 
-/* Descripción */
+/* Descripción (si hubiera) */
 .masthead p {
   font-size: 1.1rem;
-  color: #ccc;
-  margin-bottom: 1.5rem;
+  color: #f0f0f0;
+  margin-bottom: 2rem;
 }
 
-/* Botones Principales */
-.btn-primary {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  background-color: #f4a261; /* Color cálido */
-  border-color: #e76f51;
-  border-radius: 25px; /* Bordes redondeados */
-  padding: 0.75rem 1.5rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+.masthead .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
 }
 
-.btn-primary:hover {
-  background-color: #e76f51;
-  border-color: #e76f51;
-  transform: scale(1.05);
-}
-
-/* ===== ICONOS SOCIALES ===== */
+/* ICONOS SOCIALES */
 .social-icons {
   margin: 1.5rem 0;
   display: flex;
@@ -11400,8 +11391,8 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px; /* Más grandes */
-  height: 60px; /* Más grandes */
+  width: 50px; 
+  height: 50px;
   background-color: #f4a261;
   color: #fff;
   font-size: 1.5rem;
@@ -11414,19 +11405,24 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
-/* ===== BOTÓN DESCARGAR CV ===== */
-.btn-primary.download-cv {
-  font-size: 1.1rem;
-  padding: 0.8rem 2rem;
+/* BOTÓN DESCARGAR CV */
+.btn-primary {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
   background-color: #e76f51;
   border-color: #e76f51;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-primary.download-cv:hover {
+.btn-primary:hover {
   background-color: #f4a261;
   border-color: #f4a261;
   transform: scale(1.05);
 }
+
 
 /* ===== SECCIÓN CONÓCEME ===== */
 #about {
@@ -11521,46 +11517,50 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Espacio entre el icono y el texto si hay alguno */
+  gap: 0.5rem; /* Espacio entre el icono y el texto */
 }
 
 .navbar-logo {
-  height: 40px; /* Ajusta la altura */
-  width: auto; /* Mantiene la proporción */
-  margin-right: 0.5rem; /* Espacio entre el logo y los elementos del menú */
+  height: 40px; /* Tamaño adecuado */
+  width: auto; /* Mantener proporciones */
+  margin-right: 0.5rem;
 }
 
 .navbar-brand svg {
+  height: 40px;
+  width: auto;
   display: inline-block;
   vertical-align: middle;
-  height: 40px; /* Altura del SVG */
-  width: auto; /* Ancho automático para mantener proporciones */
 }
 
-/* Asegurar que no se superponga */
+/* Asegurarse de que no se superponga */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.9); /* Fondo con leve transparencia */
-  z-index: 1000; /* Asegura que esté encima de otros elementos */
+  background: rgba(255, 255, 255, 0.9); /* Fondo con transparencia */
+  z-index: 1000;
 }
+
 
 /* ===== AJUSTE RESPONSIVE ===== */
 @media (max-width: 768px) {
   .masthead-heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
+
   .masthead-subheading {
     font-size: 1rem;
   }
+
   .masthead p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
+
   .social-icons a {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     font-size: 1.2rem;
   }
 }
