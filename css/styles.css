@@ -11565,8 +11565,8 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-block {
   display: flex;               /* Alinea en fila */
   align-items: center;         /* Icono y texto al mismo nivel */
-  background: linear-gradient(135deg, #f4a261, #e76f51); 
-  /* Un degradado anaranjado; cámbialo a tu gusto */
+  background: linear-gradient(135deg, #ecc7f1, #d89bf1);
+  /* más intenso: background: linear-gradient(135deg, #f49ff6, #c46ce1); */
   color: #fff;                 /* Texto en blanco para resaltar */
   padding: 1rem;
   margin-bottom: 1.5rem;
