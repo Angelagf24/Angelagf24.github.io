@@ -132,7 +132,16 @@ h1, h2, h3, h4, h5, h6 {
 /* SECCIÓN CÓNOCEME */
 #about {
   background: #f9fafc;
-  padding: 60px 0;
+  padding: 30px 0;
+}
+
+#about h2.section-heading {
+  margin-bottom: 10px !important; /* Menos espacio debajo del “Conóceme” */
+}
+
+#about h3.section-subheading {
+  margin-top: 0 !important;
+  margin-bottom: 20px !important; 
 }
 
 .about-me img {
@@ -163,18 +172,49 @@ h1, h2, h3, h4, h5, h6 {
   color: #2a2a2a;
 }
 
+/* Ajustes generales cajas de interés */
 .interest-box {
-  background: #2a2a2a;
   color: #fff;
   padding: 20px;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .interest-box i {
   margin-bottom: 10px;
 }
+
+/* Colores específicos para las cajas de interés */
+.interest-box.web {
+  background-color: #f4a261;
+}
+.interest-box.web:hover {
+  background-color: #e76f51; 
+}
+
+.interest-box.ai {
+  background-color: #1f8bb6;
+}
+.interest-box.ai:hover {
+  background-color: #166789;
+}
+
+.interest-box.proyectos {
+  background-color: #6c757d;
+}
+.interest-box.proyectos:hover {
+  background-color: #495057;
+}
+
+.interest-box.ciber {
+  background-color: #8c53c6;
+}
+.interest-box.ciber:hover {
+  background-color: #6f42c1;
+}
+
 
 /* Sección de Tecnologías */
 .technologies-section {
@@ -182,9 +222,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .technologies-section h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px !important;
   color: #2a2a2a;
+}
+
+.technologies-section p {
+  margin-top: 0 !important;
+  margin-bottom: 20px !important; 
 }
 
 .technologies-section i {
@@ -192,10 +236,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #e76f51;
 }
 
-.technologies-section p {
-  font-size: 0.9rem;
-  color: #555;
-}
 
 /* FOOTER */
 .footer {
