@@ -11558,8 +11558,7 @@ h1, h2, h3, h4, h5, h6 {
 /* SECCIÓN FORMACIÓN */
 #formacion {
   background-color: #fff;      
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 /* Bloque contenedor de icono + texto */
@@ -11643,7 +11642,7 @@ h1, h2, h3, h4, h5, h6 {
 .soft-skills-section,
 .hard-skills-section {
   background-color: #f2f2f2;
-  padding: 20px 30px;
+  padding: 20px 0px;
 }
 
 /* Tarjeta */
@@ -11706,27 +11705,46 @@ h1, h2, h3, h4, h5, h6 {
 
 /* SECCIÓN PORTFOLIO */
 #portfolio {
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 #portfolio .card {
-  border: none;
+  height: 100%;
+  border: none;     
   border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 #portfolio .card-img-top {
+  width: 100%;
+  height: 200px;        
+  object-fit: cover;  
+  object-position: 50% 50%; 
+  display: block;      
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  object-fit: cover;
-  max-height: 200px;
 }
   
 #portfolio .card-body {
-  background-color: #f8f9fa; 
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#portfolio .card-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 #portfolio .card-footer {
-  background-color: #fff;
+  background-color: #fff; 
+  text-align: center;    
+  border-top: none;       
+  margin-top: auto;      
+  display: flex;
+  justify-content: center;
+  gap: 10px;      
 }
 
 #portfolio .card h5.card-title {
@@ -11736,6 +11754,7 @@ h1, h2, h3, h4, h5, h6 {
 #portfolio .card-text {
   font-size: 0.95rem;
   line-height: 1.4;
+  margin-bottom: auto;
 }
 
 /* Sombrita suave en hover */
@@ -11743,4 +11762,11 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 5px 18px rgba(0,0,0,0.15);
   transform: translateY(-2px);
   transition: all 0.3s ease;
+}
+
+#portfolio .card-footer .btn {
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 600;
+  display: center;
 }
