@@ -11655,49 +11655,62 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* SECCIÓN HABILIDADES */
-/* Sección Habilidades Generales */
-#skills {
-  padding: 40px 0;
+.soft-skills-section,
+.hard-skills-section {
+   background-color: #f8fafc; 
+   padding: 40px 0;
 }
 
-/* Estilo Común para Soft y Hard Skills */
+/* Tarjeta */
 .skill-card {
-  background: #ffd6e0; /* Fondo rosa pastel */
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background-color: #fe86a4; 
+  color: #fff;                /* Texto en blanco */
   padding: 20px;
-  transition: transform 0.2s;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%; /* Para que todas tengan la misma altura en su col */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.skill-card img {
-  width: 50px;
-  height: 50px;
+/* Efecto hover */
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Título en la tarjeta */
+.skill-title {
+  font-size: 1.2rem;
+  margin: 10px 0 0 0;
+  text-transform: capitalize;
+}
+
+.skill-icon img {
+  width: 40px;  
+  height: auto;
   margin-bottom: 10px;
 }
 
-.skill-card:hover {
-  transform: translateY(-5px);
+/* Texto del listado Hard Skills (para la parte <p class="skill-list">) */
+.skill-list {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
 }
 
-.skill-title {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* Espacios entre secciones */
-#skills {
-  margin-top: 40px;
-}
-
-.soft-skills-section, .hard-skills-section {
-  margin-bottom: 30px;
-}
-
-/* Ajuste responsive */
-@media (max-width: 768px) {
+/* Ajustes responsive para que se adapten bien */
+@media (max-width: 576px) {
   .skill-card {
-    margin-bottom: 15px;
+    padding: 15px;
+  }
+  .skill-title {
+    font-size: 1rem;
+  }
+  .skill-icon img {
+    width: 30px;
   }
 }
