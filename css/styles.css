@@ -10838,7 +10838,7 @@ p {
 }
 
 .page-section {
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11637,28 +11637,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/* Ajustes responsive */
-@media (max-width: 768px) {
-  .timeline-block {
-      flex-direction: column;
-      margin-left: 50px;  /* Para evitar que se salga en pantallas pequeñas */
-  }
-  .timeline-icon {
-      position: relative;
-      margin-left: 0;
-      margin-bottom: 10px;
-  }
-  .timeline-content {
-      margin-left: 0;
-  }
-}
-
 
 /* SECCIÓN HABILIDADES */
 .soft-skills-section,
 .hard-skills-section {
   background-color: #f2f2f2;
-  padding: 20px 0;
+  padding: 20px 30px;
 }
 
 /* Tarjeta */
@@ -11716,17 +11700,4 @@ h1, h2, h3, h4, h5, h6 {
 }
 .skill-item img {
   margin-right: 5px;     /* Separación del ícono respecto al texto */
-}
-
-/* Ajustes responsive */
-@media (max-width: 576px) {
-  .skill-card {
-    padding: 15px;
-  }
-  .skill-title {
-    font-size: 1rem;
-  }
-  .skill-icon img {
-    width: 30px;
-  }
 }
