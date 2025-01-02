@@ -11557,79 +11557,83 @@ h1, h2, h3, h4, h5, h6 {
 
 /* SECCIÓN FORMACIÓN */
 #formacion {
-  background-color: #f9fafc;
+  background-color: #fff;      
   padding: 60px 0;
 }
 
-/* Timeline Container */
+/* Bloque contenedor de icono + texto */
 .timeline-block {
-  display: flex;
-  position: relative;
-  margin-bottom: 40px;
+  display: flex;               /* Alinea en fila */
+  align-items: center;         /* Icono y texto al mismo nivel */
+  background: linear-gradient(135deg, #f4a261, #e76f51); 
+  /* Un degradado anaranjado; cámbialo a tu gusto */
+  color: #fff;                 /* Texto en blanco para resaltar */
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Icono circular a la izquierda */
+/* Icono circular */
 .timeline-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 50px;
   height: 50px;
-  background-color: #e76f51;
-  color: #fff;
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2); 
+  /* Un poco transparente para contrastar con el degradado */
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  margin-left: -75px;
+  font-size: 1.5rem;           /* Tamaño del icono */
+  color: #fff;                 /* Icono en blanco */
+  margin-right: 1rem;          /* Espacio entre el icono y texto */
+  flex-shrink: 0;              /* Que no se encoja si el texto es largo */
 }
 
-/* Contenido del bloque */
+/* Contenido de texto */
 .timeline-content {
-  margin-left: 50px;  
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1;                     
 }
 
-/* Títulos en el timeline */
+/* Título principal del bloque (p.e. “Experiencia Profesional”) */
 .timeline-title {
-  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  color: #333;
 }
 
-/* Subtítulo (p.e. nombre de la empresa o institución) */
+/* Subtítulo (p.e. “Investigadora en la UCLM…”) */
 .timeline-content h5 {
-  margin-bottom: 0.2rem;
-  color: #555;
-  font-size: 1.1rem;
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-/* Fecha o rango temporal */
+/* Fecha */
 .timeline-date {
   display: block;
-  font-size: 0.9rem;
-  color: #999;
   margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #f1f1f1;   /* Un tono gris claro */
 }
 
 /* Descripción */
 .timeline-description {
+  margin-bottom: 0;
   font-size: 0.95rem;
-  line-height: 1.4;
-  color: #666;
+  color: #fff; 
 }
 
-/* Quita bulletpoints de ul */
+/* Listas de formación complementaria */
 .timeline-content ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
-
 .timeline-content ul li {
   margin-bottom: 0.3rem;
+  color: #fff;
 }
