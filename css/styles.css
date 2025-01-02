@@ -10838,7 +10838,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11657,18 +11657,18 @@ h1, h2, h3, h4, h5, h6 {
 /* SECCIÓN HABILIDADES */
 .soft-skills-section,
 .hard-skills-section {
-   background-color: #f8fafc; 
-   padding: 40px 0;
+  background-color: #f2f2f2;
+  padding: 20px 0;
 }
 
 /* Tarjeta */
 .skill-card {
-  background-color: #fe86a4; 
-  color: #fff;                /* Texto en blanco */
+  background-color: #ffc1cb; 
+  color: #fff;
   padding: 20px;
   border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  height: 100%; /* Para que todas tengan la misma altura en su col */
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11688,8 +11688,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
 }
 
+/* Ícono en la tarjeta */
 .skill-icon img {
-  width: 40px;  
+  width: 40px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -11700,9 +11701,24 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   line-height: 1.4;
   margin: 0;
+  /* Para que icono + texto sean un bloque que baja junto si no cabe */
+  display: flex;         
+  flex-wrap: wrap;       /* Permite que vayan saltando de línea */
+  justify-content: center; 
+  gap: 10px;             /* Espacio entre cada “pareja” */
 }
 
-/* Ajustes responsive para que se adapten bien */
+/* Para cada pareja Icono+Texto en Hard Skills */
+.skill-item {
+  display: inline-flex;   /* Ícono + texto en la misma fila */
+  align-items: center;
+  margin: 5px;           /* Pequeño margen alrededor */
+}
+.skill-item img {
+  margin-right: 5px;     /* Separación del ícono respecto al texto */
+}
+
+/* Ajustes responsive */
 @media (max-width: 576px) {
   .skill-card {
     padding: 15px;
