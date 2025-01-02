@@ -12,7 +12,5 @@
   <!-- Círculo decorativo -->
   <circle cx="50" cy="50" r="40" class="circle"/>
   <!-- Iniciales en el círculo -->
-  <text x="50" y="58" class="text">AG</text>
-  <!-- Texto al lado del círculo -->
-  <text x="120" y="55" class="text">Ángela Gijón</text>
+  <text x="100" y="108" class="text">AG</text>
 </svg>
