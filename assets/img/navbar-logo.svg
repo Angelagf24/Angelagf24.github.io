@@ -1,7 +1,7 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="80"
-  height="80"
+  width="120"    
+  height="120"      
   viewBox="0 0 60 60"
 >
   <circle cx="30" cy="30" r="25" fill="#f4a261" />
@@ -10,7 +10,7 @@
     y="30"
     fill="#e76f51"
     font-family="'Playfair Display', serif"
-    font-size="20"
+    font-size="26"  
     font-weight="bold"
     dominant-baseline="middle"
     text-anchor="middle"

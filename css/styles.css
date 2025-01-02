@@ -11335,9 +11335,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section (Sección principal) */
 .masthead {
+  /* Lo que ya tienes */
   text-align: center;
-  padding: 1rem 0;
   background: linear-gradient(to bottom, #f9fafc, #e3e7ed);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrado vertical */
+  align-items: center;     /* Centrado horizontal */
+  min-height: 100vh;       /* Ocupar al menos toda la ventana */
+  margin: 0;               /* Quitar margenes que puedan empujar */
+  padding: 0 1rem;         /* Asegurar un margen horizontal */
 }
 
 .masthead-subheading {
@@ -11377,12 +11384,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* NAVBAR */
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
+.navbar-logo img {
+  width: 120px;  
+  height: auto;
 }
 
 /* ICONOS SOCIALES */
